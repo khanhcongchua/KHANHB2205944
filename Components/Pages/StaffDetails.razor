@@ -1,0 +1,36 @@
+@page "/staffdatails/{id}"
+
+@inherits StaffDetailsBase
+
+if (employee == null){
+    <div class="snipper"></div>
+}
+else{
+    <div class="row justify-content-center m-3" >
+        <div class="card">
+            <div class="card-header">
+                <h1>@employee.FirstName @employee.LastName</h1>
+            </div>
+
+            <div class="card-body text-center">
+                @* <img class="card-img-top" src="@employee.photo"/> *@
+                <h4>Employee ID: @employee.EmployeeId</h4>
+                <h4>Email: @employee.Email</h4>
+                <h4>Starting Date: @employee.StartingDate.ToString()</h4>
+                <h4>Department: @employee.DepartmentId</h4>
+            </div>
+            
+            <div class="card-footer text-center">
+                <a href="/stafflist" class="btn btn-primary">Back</a>
+                <a href="@($"/editemployee/{employee.EmployeeId}")" 
+                    class="btn btn-primary m-1">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>   
+            </div>
+        </div>
+    </div>
+}
+    using BlazorStaff.Models;
+
+
+    using BlazorStaff.Models;
+
