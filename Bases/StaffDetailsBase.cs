@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Components;
 using BlazorStaff.Repository;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 
-namespace BlazorStaff.Components.Pages;
-
-public class StaffDetailsBase : ComponentBase
+namespace BlazorStaff.Components.Pages{
+    public class StaffDetailsBase : ComponentBase
 {
     public Employee employee { get; set; } = new Employee();
     [Inject]
@@ -21,3 +20,5 @@ public class StaffDetailsBase : ComponentBase
         employee = await staffRepository.GetEmployee(int.Parse(Id));
     }
 }
+};
+

@@ -1,11 +1,13 @@
-@page "/staffdatails/{id}"
+@page "/staffdetails/{id}"
 
-@inherits StaffDetailsBase
+@inherits StaffDetailsBase;
 
-if (employee == null){
+@if (employee == null)
+{
     <div class="snipper"></div>
 }
-else{
+else
+{
     <div class="row justify-content-center m-3" >
         <div class="card">
             <div class="card-header">
@@ -18,19 +20,15 @@ else{
                 <h4>Email: @employee.Email</h4>
                 <h4>Starting Date: @employee.StartingDate.ToString()</h4>
                 <h4>Department: @employee.DepartmentId</h4>
+                @* <h4>Department: @employee.Department?.DepartmentName ?? "No department assigned"</h4> *@
+                @* <h4>Department: @employee.Department.DepartmentId</h4> *@
             </div>
             
             <div class="card-footer text-center">
                 <a href="/stafflist" class="btn btn-primary">Back</a>
-                <a href="@($"/editemployee/{employee.EmployeeId}")" 
-                    class="btn btn-primary m-1">Edit</a>
+                <a href="@($"/editemployee/{employee.EmployeeId}")" class="btn btn-primary m-1">Edit</a>
                 <a href="#" class="btn btn-danger">Delete</a>   
             </div>
         </div>
     </div>
 }
-    using BlazorStaff.Models;
-
-
-    using BlazorStaff.Models;
-

@@ -123,3 +123,4 @@ D:\24-25\HK1-24-25\DotNet\BlazorStaff\obj\Debug\net8.0\refint\BlazorStaff.dll
 D:\24-25\HK1-24-25\DotNet\BlazorStaff\obj\Debug\net8.0\BlazorStaff.pdb
 D:\24-25\HK1-24-25\DotNet\BlazorStaff\obj\Debug\net8.0\BlazorStaff.genruntimeconfig.cache
 D:\24-25\HK1-24-25\DotNet\BlazorStaff\obj\Debug\net8.0\ref\BlazorStaff.dll
+D:\24-25\HK1-24-25\DotNet\BlazorStaff\obj\Debug\net8.0\BlazorStaff.sourcelink.json
